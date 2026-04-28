@@ -6,7 +6,7 @@
   "version": 1,
   "securityGroups": [],
   "displayName": "Decrypt AES",
-  "description": "",
+  "description": "Decrypts an AES-256-CBC encrypted value using the Addingwell transformer service. Takes a base64-encoded ciphertext, an IV, and a UTF-8 key, and returns the decrypted plaintext string. Returns null if decryption fails.",
   "containerContexts": [
     "SERVER"
   ]
@@ -67,7 +67,7 @@ function decrypt(value) {
     "keySize": 256
   };
 
-  return sendHttpRequest('https://' + host + '/transformer/aes-decrypt',
+  return sendHttpRequest('https://internal.addingwell.com/transformer/aes-decrypt',
     {
       headers: {
         'Content-Type': 'application/json',
