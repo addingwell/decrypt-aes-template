@@ -1,4 +1,6 @@
 homepage: "https://www.addingwell.com"
 versions:
+  - sha: 92b191dfe4ca5c7134634c07b7f9654ea04dbbfa
+    changeNotes: Use internal route
   - sha: d5bde7b5300ca39c6f7f227a1fe060f13bdaed8a
     changeNotes: Initial commit
